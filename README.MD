@@ -15,3 +15,8 @@ Project created for careerFoundry's Python for Web Developers specialization cou
 - Python 3.6+ installation
 - Locally hosted MySQL database
 - ipython installation
+
+## Structure Choices
+1) Each recipe is stored as a dictionary object. It works as a structure because of the key:value pairs it offers. This will help both users and developers further down the line, as it will make each dictionary object(each recipe) easily search-able. Using Python one can get information on ingredients, cooking time, etc, just by pulling the corresponding key. This sets up some of the base functionality of the app, since the users need to be able to search for all of the keys described above.
+
+2) The outer structure (all_recipes) is a list object. The intention here was to have a container for all of the recipe data that will allow the developer to organize recipes, add, or modify them as necessary. A tuple would have worked to keep the recipes together, but is too rigid of a structure and would make updating & organizing recipes too cumbersome to be practical. 
